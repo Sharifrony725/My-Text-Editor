@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="bg-black">
+   <div class="bg-teal-400 w-2/3 mx-auto mt-12 h-[500px]">
+    <h1 class="p-5 text-center text-3xl">My Text Editor</h1>
+        <div class="border-2 border-black-500  w-2/3 mx-auto h-[380px] p-5">
+           <div class="flex  justify-between">
+                <div class="flex gap-2 justify-between items-center">
+                    <button id="bold-btn"><i  class="fa-solid fa-bold"></i></button>
+                    <button><i class="fa-solid fa-italic"></i></button>
+                    <button><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div  class="flex gap-2 justify-between items-center">
+                    <button><i class="fa-solid fa-align-left"></i></button>
+                    <button><i class="fa-solid fa-align-center"></i></button>
+                    <button><i class="fa-solid fa-align-right"></i></button>
+                </div>
+                <div>
+                    <input type="number" value="16" class="w-10">
+                    <button><i class="fa-solid fa-eye-dropper"></i></button>
+                </div>
+           </div><hr class="mt-2 text-black">
+           <div class="mt-5">
+                <textarea  class="p-2" name="" id="text-content" cols="76" rows="10"></textarea>
+           </div>
+        </div>
+   </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
